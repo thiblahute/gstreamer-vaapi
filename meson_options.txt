@@ -4,3 +4,5 @@ option('with_x11', type : 'combo', choices : ['yes', 'no', 'auto'], value : 'aut
 option('with_glx', type : 'combo', choices : ['yes', 'no', 'auto'], value : 'auto')
 option('with_wayland', type : 'combo', choices : ['yes', 'no', 'auto'], value : 'auto')
 option('with_egl', type : 'combo', choices : ['yes', 'no', 'auto'], value : 'auto')
+option('doc', type : 'feature', value : 'auto', yield: true,
+       description: 'Enable documentation.')

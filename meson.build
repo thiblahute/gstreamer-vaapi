@@ -183,6 +183,7 @@ libsinc = include_directories('gst-libs')
 subdir('gst-libs')
 subdir('gst')
 #subdir('tests')
+subdir('docs')
 
 python3 = import('python3').find_python()
 run_command(python3, '-c', 'import shutil; shutil.copy("hooks/pre-commit.hook", ".git/hooks/pre-commit")')
